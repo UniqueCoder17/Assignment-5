@@ -14,37 +14,105 @@
 <body>
     <header class="">
         <nav>
-            <div class="navbar bg-[rgb(249,247,243)]">
-                <div class="navbar-start">
+            <div class="navbar fixed top-0 left-0 right-0 bg-[rgb(249,247,243)] z-10">
+                <div class="navbar-start ">
                     <button class="btn bg-[#B4F461] font-bold lg:text-xl">Blog</button>
                 </div>
                 <div class="navbar-center sm:mr-9">
-                  <img class="w-8 lg:w-14" src="./assets/logo.png" alt="">
-                  <h1 class=" lg:text-2xl font-bold ml-2">Donate Bangladesh</h1>
+                    <img class="w-8 lg:w-14" src="./assets/logo.png" alt="">
+                    <h1 class="lg:text-2xl font-bold ml-2">Donate Bangladesh</h1>
                 </div>
-                <div class="navbar-end ">
+                <div class="navbar-end">
                     <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
                     <div>
                         <h1 class="text-base lg:text-2xl font-bold">86000 BDT</h1>
                     </div>
-                    
                 </div>
-              </div>
+            </div>
         </nav>
-        <div class="mt-6 flex justify-center">
+        <div class="mt-20 flex justify-center fixed top-0 left-0 right-0">
+            <!-- Added margin-top to push buttons below the fixed navbar -->
             <button class="btn sm:btn-sm md:btn-md lg:btn-lg px-10 mr-5">Donation</button>
             <button class="btn sm:btn-sm md:btn-md lg:btn-lg px-10">History</button>
         </div>
-        <div class="divider"></div>
+        <div class="divider mt-12"></div>
     </header>
-    
+
     <!-- Main section start -->
-    <main>
-        
+    <main class="mt-16 lg:mt-24 mx-3 lg:mx-[100px] mb-10">
+        <div class="card bg-base-100  lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
+
+            <div class=""><img class="lg:max-w-3xl" src="./assets/noakhali.png" alt=""></div>
+
+            <div class="card-body  ">
+                <div class="flex">
+                    <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
+                    <div>
+                        <h1 class="text-base lg:text-2xl font-bold">86000 BDT</h1>
+                    </div>
+                </div>
+                <h2 class="card-title text-xl lg:text-3xl">Donate for Flood at Noakhali, Bangladesh</h2>
+                <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.</p>
+                <div class="">
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
+                </div>
+                <div class="card-actions">
+                    <button class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]">Donate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 mt-10 lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
+
+            <div class=""><img class="lg:max-w-3xl" src="./assets/feni.png" alt=""></div>
+
+            <div class="card-body  ">
+                <div class="flex">
+                    <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
+                    <div>
+                        <h1 class="text-base lg:text-2xl font-bold">86000 BDT</h1>
+                    </div>
+                </div>
+                <h2 class="card-title text-xl lg:text-3xl">Donate for Flood Relief in Feni,Bangladesh</h2>
+                <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                <div class="">
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
+                </div>
+                <div class="card-actions">
+                    <button class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]">Donate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 mt-10 lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
+
+            <div class=""><img class="lg:max-w-3xl" src="./assets/quota-protest.png" alt=""></div>
+
+            <div class="card-body  ">
+                <div class="flex">
+                    <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
+                    <div>
+                        <h1 class="text-base lg:text-2xl font-bold">86000 BDT</h1>
+                    </div>
+                </div>
+                <h2 class="card-title text-xl lg:text-3xl">Aid for Injured in the Quota Movement</h2>
+                <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                <div class="">
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
+                </div>
+                <div class="card-actions">
+                    <button class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]">Donate</button>
+                </div>
+            </div>
+        </div>
+
     </main>
-    <!-- Main section End -->
-    
-    
+
+    <!-- Repeat the main section as needed -->
+
 </body>
 
 </html>
