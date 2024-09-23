@@ -1,18 +1,11 @@
 
 
-document.getElementById('show-add-money-form')
+document.getElementById('btn-color')
 .addEventListener('click', function(){
-    showSectionById('add-money-form')
+    showSectionById('donation-btn')
 })
 
-
-document.getElementById('show-cash-out-form')
+document.getElementById('btn-color')
 .addEventListener('click', function(){
-    showSectionById('cash-out-form')
-})
-
-
-document.getElementById('show-transaction-history')
-.addEventListener('click', function(){
-    showSectionById('transaction-section')
+    showSectionById('history-btn')
 })

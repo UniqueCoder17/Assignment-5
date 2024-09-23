@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="fixed top-0 left-0 right-0 z-10 bg-gray-200">
         <nav>
-            <div class="navbar fixed top-0 left-0 right-0 bg-[rgb(249,247,243)] z-10">
+            <div class="navbar  bg-[rgb(249,247,243)] ">
                 <div class="navbar-start ">
                     <a href="http://127.0.0.1:5500/blog.html">
                         <button class="btn bg-[#B4F461] font-bold lg:text-xl">Blog</button>
@@ -32,25 +32,31 @@
                 </div>
             </div>
         </nav>
-        <div class="mt-20 flex justify-center fixed top-0 left-0 right-0">
+        <div id="btn-color" class="mt-5 mb-3 flex justify-center ">
             <!-- Added margin-top to push buttons below the fixed navbar -->
-            <button class="btn sm:btn-sm md:btn-md lg:btn-lg px-10 mr-5">Donation</button>
-            <a href="http://127.0.0.1:5500/history.html"><button
-                    class="btn sm:btn-sm md:btn-md lg:btn-lg px-10">History</button></a>
+            <button id="donation-btn" class="btn sm:btn-sm bg-[#B4F461] md:btn-md lg:btn-lg px-10 mr-5">
+                Donation
+            </button>
+            <a href="http://127.0.0.1:5500/history.html">
+                <button id="history-btn" class="btn sm:btn-sm md:btn-md lg:btn-lg px-10">
+                    History
+                </button>
+            </a>
         </div>
-        <div class="divider mt-12"></div>
+
     </header>
+    <div class="divider mt-12"></div>
 
     <!-- Main section start -->
-    <main class="mt-16 lg:mt-24 mx-3 lg:mx-[100px] mb-10">
-        <!-- 1st  -->
+    <main class="mt-24 lg:mt-28 mx-3 lg:mx-[100px] mb-10">
+        <!-- 1st card -->
         <div class="card bg-base-100  lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
 
             <div class=""><img class="lg:max-w-3xl" src="./assets/noakhali.png" alt=""></div>
 
             <div class="card-body  ">
                 <div class="flex">
-                    <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
+                    <img class="w-6 lg:w-8 mr-1" src="./assets/coin.png" alt="">
                     <div>
                         <h1 class="text-base lg:text-2xl font-bold"><span id="donate-balance">0</span> BDT</h1>
                     </div>
@@ -61,7 +67,7 @@
                     or small, makes difference. Please join us in supporting the relief efforts and making a positive
                     impact on the lives of those in need.</p>
                 <div class="">
-                    <input id="hello" type="text" placeholder="Type here"
+                    <input id="donate-input" type="text" placeholder="Type here"
                         class="input input-bordered w-full lg:w-[692px]" />
                 </div>
                 <div class="card-actions">
@@ -84,15 +90,14 @@
             </div>
         </div>
 
-        <!-- 2nd cart -->
-
+        <!-- 2nd card -->
         <div class="card bg-base-100 mt-10 lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
 
             <div class=""><img class="lg:max-w-3xl" src="./assets/feni.png" alt=""></div>
 
             <div class="card-body  ">
                 <div class="flex">
-                    <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
+                    <img class="w-6 lg:w-8 mr-1" src="./assets/coin.png" alt="">
                     <div>
                         <h1 class="text-base lg:text-2xl font-bold"><span id="feni-donate-balance">0</span> BDT</h1>
                     </div>
@@ -104,7 +109,7 @@
                     rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
                     difference. Please consider donating today to assist those in urgent need.</p>
                 <div class="">
-                    <input id="feni-hero" type="text" placeholder="Type here"
+                    <input id="feni-input" type="text" placeholder="Type here"
                         class="input input-bordered w-full lg:w-[692px]" />
                 </div>
                 <div class="card-actions">
@@ -127,15 +132,16 @@
             </div>
         </div>
 
+        <!-- 3rd card -->
         <div class="card bg-base-100 mt-10 lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
 
             <div class=""><img class="lg:max-w-3xl" src="./assets/quota-protest.png" alt=""></div>
 
             <div class="card-body  ">
                 <div class="flex">
-                    <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
+                    <img class="w-6 lg:w-8 mr-1" src="./assets/coin.png" alt="">
                     <div>
-                        <h1 class="text-base lg:text-2xl font-bold>"><span id="donate-quota-balance">0</span> BDT
+                        <h1 class="text-base lg:text-2xl font-bold"><span id="donate-quota-balance">0</span> BDT
                         </h1>
                     </div>
                 </div>
@@ -147,7 +153,7 @@
                     alleviating their suffering and aiding in their recovery. Please consider making a donation to
                     support these brave individuals in their time of need.</p>
                 <div class="">
-                    <input id="quota-hero" type="text" placeholder="Type here"
+                    <input id="quota-input" type="text" placeholder="Type here"
                         class="input input-bordered w-full lg:w-[692px]" />
                 </div>
                 <div class="card-actions">
