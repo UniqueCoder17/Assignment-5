@@ -7,18 +7,13 @@ document.getElementById('donate-btn')
         //     return;
         // }
 
-        const cashOut = getInputFieldValueById('donate-input')
+        const cashOut = getInputFieldValueById('hello')
         const balance = getTextFiledValueById('account-balance')
-
+        console.log("caseOUT=> ",cashOut )
+        console.log("balance=> ",balance)
         const newBalance = balance - cashOut;
+        console.log(newBalance)
         document.getElementById('account-balance').innerText = newBalance;
-
-        const p = document.createElement('p');
-            p.innerText = `Added: ${addMoney} TK. New Balance: ${newBalance}`;
-            console.log(p);
-
-            document.getElementById('transaction-container').appendChild(p);
-
 
     })
 
@@ -32,18 +27,11 @@ document.getElementById('feni-donate-btn')
         //     return;
         // }
 
-        const cashOut = getInputFieldValueById('feni-donate-input')
+        const cashOut = getInputFieldValueById('feni-hero')
         const balance = getTextFiledValueById('account-balance')
 
         const newBalance = balance - cashOut;
         document.getElementById('account-balance').innerText = newBalance;
-
-        const p = document.createElement('p');
-            p.innerText = `Added: ${addMoney} TK. New Balance: ${newBalance}`;
-            console.log(p);
-
-            document.getElementById('transaction-container').appendChild(p);
-
 
     })
 
@@ -56,19 +44,13 @@ document.getElementById('btn-quota')
         //     return;
         // }
 
-        const cashOut = getInputFieldValueById('donate-quota-inpute')
+        const cashOut = getInputFieldValueById('quota-hero')
         const balance = getTextFiledValueById('account-balance')
+        console.log(balance)
 
         const newBalance = balance - cashOut;
         document.getElementById('account-balance').innerText = newBalance;
-
-        const p = document.createElement('p');
-            p.innerText = `Added: ${addMoney} TK. New Balance: ${newBalance}`;
-            console.log(p);
-
-            document.getElementById('transaction-container').appendChild(p);
-
-
+        
     })
 
 

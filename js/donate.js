@@ -7,7 +7,7 @@ function getTextFiledValueById(id) {
     return parseFloat(document.getElementById(id).innerText) || 0;
 }
 
-// Add event listeners to donation buttons
+
 function addDonationEventListener(buttonId, inputId, balanceId) {
     document.getElementById(buttonId)
         .addEventListener('click', function (event) {
@@ -19,7 +19,6 @@ function addDonationEventListener(buttonId, inputId, balanceId) {
 
             document.getElementById(balanceId).innerText = newBalance;
 
-            // Store transaction history in localStorage
             const transaction = {
                 amount: addMoney,
                 date: new Date().toLocaleString(),
@@ -28,14 +27,10 @@ function addDonationEventListener(buttonId, inputId, balanceId) {
                        "Aid for Injured in the Quota Movement"
             };
 
-            // Retrieve existing transactions from localStorage
             const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
             transactions.push(transaction);
             localStorage.setItem('transactions', JSON.stringify(transactions));
 
-            // Optionally, show a confirmation modal here
-
-            // Clear input field after donation
             document.getElementById(inputId).value = '';
         });
 }
