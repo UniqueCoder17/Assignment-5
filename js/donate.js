@@ -1,35 +1,55 @@
 
 // Donate for Noakhali
-document.getElementById('donate-btn')
-    .addEventListener('click', function (event) {
-        event.preventDefault();
+document.getElementById('donate-btn').addEventListener('click', function (event) {
+    event.preventDefault();
 
-        // if (isNaN(cashOut) || cashOut <= 0) {
-        //     alert('Please enter a valid amount to donate.');
-        //     return;
-        // }
+    const addMoney = getInputFieldValueById('donate-input');
+    const balance = getTextFiledValueById('donate-balance');
 
-        const cashOut = getInputFieldValueById('donate-input')
-        const balance = getTextFiledValueById('donate-balance')
-        const newBalance = balance + cashOut;
-        document.getElementById('donate-balance').innerText = newBalance;
+    // Check for NaN
+    if (isNaN(addMoney) || isNaN(balance)) {
+        alert("Please type a valid number for donation.");
+        return;
+    }
 
-    })
+    const newBalance = balance + addMoney;
+    document.getElementById('donate-balance').innerText = newBalance;
+
+    // Save the donation transaction
+    const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+    transactions.push({
+        amount: addMoney,
+        cause: "Donate for Flood at Noakhali, Bangladesh",
+        date: new Date().toLocaleString(),
+    });
+    localStorage.setItem('transactions', JSON.stringify(transactions));
+
+
+});
 
 // Donate for Feni
 document.getElementById('feni-donate-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
 
-        // if (isNaN(cashOut) || cashOut <= 0) {
-        //     alert('Please enter a valid amount to donate.');
-        //     return;
-        // }
+        const addMoney = getInputFieldValueById('feni-input')
+        const balance = getTextFiledValueById('feni-donate-balance');
 
-        const cashOut = getInputFieldValueById('feni-input')
-        const balance = getTextFiledValueById('feni-donate-balance')
-        const newBalance = balance + cashOut;
+        if (isNaN(addMoney) || isNaN(balance)) {
+            alert("Please type a valid number for donation.");
+            return;
+        }
+
+        const newBalance = balance + addMoney;
         document.getElementById('feni-donate-balance').innerText = newBalance;
+
+        const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+        transactions.push({
+            amount: addMoney,
+            cause: "Donate for Flood Relief in Feni,Bangladesh",
+            date: new Date().toLocaleString(),
+        });
+        localStorage.setItem('transactions', JSON.stringify(transactions));
 
     })
 
@@ -40,15 +60,25 @@ document.getElementById('btn-quota')
     .addEventListener('click', function (event) {
         event.preventDefault();
 
-        // if (isNaN(cashOut) || cashOut <= 0) {
-        //     alert('Please enter a valid amount to donate.');
-        //     return;
-        // }
-
-        const cashOut = getInputFieldValueById('quota-input')
+        const addMoney = getInputFieldValueById('quota-input')
         const balance = getTextFiledValueById('donate-quota-balance')
-        const newBalance = balance + cashOut;
+
+        if (isNaN(addMoney) || isNaN(balance)) {
+            alert("Please type a valid number for donation.");
+            return;
+        }
+
+        const newBalance = balance + addMoney;
         document.getElementById('donate-quota-balance').innerText = newBalance;
+
+        const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+        transactions.push({
+            amount: addMoney,
+            cause: "Aid for Injured in the Quota Movement",
+            date: new Date().toLocaleString(),
+        });
+        localStorage.setItem('transactions', JSON.stringify(transactions));
+
 
     })
 
