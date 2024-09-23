@@ -42,6 +42,7 @@
 
     <!-- Main section start -->
     <main class="mt-16 lg:mt-24 mx-3 lg:mx-[100px] mb-10">
+        <!-- 1st  -->
         <div class="card bg-base-100  lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
 
             <div class=""><img class="lg:max-w-3xl" src="./assets/noakhali.png" alt=""></div>
@@ -61,8 +62,8 @@
                 <div class="">
                     <input id="donate-input" type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
                 </div>
-                <div id="donate-btn" class="card-actions">
-                    <button class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]"
+                <div  class="card-actions">
+                    <button id="donate-btn" class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]"
                         onclick="my_modal_1.showModal()">Donate</button>
                     <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle text-center">
                         <div class="modal-box">
@@ -81,6 +82,8 @@
             </div>
         </div>
 
+        <!-- 2nd cart -->
+
         <div class="card bg-base-100 mt-10 lg:w-[80rem] shadow-xl flex-col lg:flex-row flex p-5">
 
             <div class=""><img class="lg:max-w-3xl" src="./assets/feni.png" alt=""></div>
@@ -89,7 +92,7 @@
                 <div class="flex">
                     <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
                     <div>
-                        <h1 class="text-base lg:text-2xl font-bold">86000 BDT</h1>
+                        <h1 class="text-base lg:text-2xl font-bold"><span id="feni-donate-balance">86000</span> BDT</h1>
                     </div>
                 </div>
                 <h2 class="card-title text-xl lg:text-3xl">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -99,10 +102,10 @@
                     rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
                     difference. Please consider donating today to assist those in urgent need.</p>
                 <div class="">
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
+                    <input id="feni-donate-input" type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
                 </div>
                 <div class="card-actions">
-                    <button class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]"
+                    <button id="feni-donate-btn" class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]"
                         onclick="my_modal_2.showModal()">Donate</button>
                     <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle text-center">
                         <div class="modal-box">
@@ -129,7 +132,7 @@
                 <div class="flex">
                     <img class="w-4 lg:w-8 mr-1" src="./assets/coin.png" alt="">
                     <div>
-                        <h1 class="text-base lg:text-2xl font-bold">86000 BDT</h1>
+                        <h1 class="text-base lg:text-2xl font-bold>"><span id="donate-quota-balance">80000</span> BDT</h1>
                     </div>
                 </div>
                 <h2 class="card-title text-xl lg:text-3xl">Aid for Injured in the Quota Movement</h2>
@@ -140,10 +143,10 @@
                     alleviating their suffering and aiding in their recovery. Please consider making a donation to
                     support these brave individuals in their time of need.</p>
                 <div class="">
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
+                    <input id="donate-quota-inpute" type="text" placeholder="Type here" class="input input-bordered w-full lg:w-[692px]" />
                 </div>
                 <div class="card-actions">
-                    <button class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]"
+                    <button id="btn-quota" class="btn bg-[#B4F461] mt-2 lg:mt-4 w-full lg:px-[302px]"
                         onclick="my_modal_3.showModal()">Donate</button>
                     <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle text-center">
                         <div class="modal-box">
