@@ -8,8 +8,7 @@ document.getElementById('donate-btn')
         const cashOut = getInputFieldValueById('donate-input')
         const balance = getTextFiledValueById('account-balance')
 
-        if (isNaN(cashOut) || isNaN(balance)) {
-            alert("Please type a valid number for cash out.");
+        if (isNaN(addMoney) || addMoney <= 0) {          
             return;
         }
 
@@ -27,8 +26,7 @@ document.getElementById('feni-donate-btn')
         const cashOut = getInputFieldValueById('feni-input')
         const balance = getTextFiledValueById('account-balance')
 
-        if (isNaN(cashOut) || isNaN(balance)) {
-            alert("Please type a valid number for cash out.");
+        if (isNaN(addMoney) || addMoney <= 0) {       
             return;
         }
 
@@ -46,8 +44,7 @@ document.getElementById('btn-quota')
         const cashOut = getInputFieldValueById('quota-input')
         const balance = getTextFiledValueById('account-balance')
 
-        if (isNaN(cashOut) || isNaN(balance)) {
-            alert("Please type a valid number for cash out.");
+        if (isNaN(addMoney) || addMoney <= 0) {
             return;
         }
 

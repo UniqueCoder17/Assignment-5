@@ -6,16 +6,15 @@ document.getElementById('donate-btn').addEventListener('click', function (event)
     const addMoney = getInputFieldValueById('donate-input');
     const balance = getTextFiledValueById('donate-balance');
 
-    // Check for NaN
-    if (isNaN(addMoney) || isNaN(balance)) {
-        alert("Please type a valid number for donation.");
+    if (isNaN(addMoney) || addMoney <= 0) {
+        alert("Please type a valid positive number for donation.");
         return;
     }
 
     const newBalance = balance + addMoney;
     document.getElementById('donate-balance').innerText = newBalance;
 
-    // Save the donation transaction
+
     const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
     transactions.push({
         amount: addMoney,
@@ -23,7 +22,6 @@ document.getElementById('donate-btn').addEventListener('click', function (event)
         date: new Date().toLocaleString(),
     });
     localStorage.setItem('transactions', JSON.stringify(transactions));
-
 
 });
 
@@ -35,8 +33,8 @@ document.getElementById('feni-donate-btn')
         const addMoney = getInputFieldValueById('feni-input')
         const balance = getTextFiledValueById('feni-donate-balance');
 
-        if (isNaN(addMoney) || isNaN(balance)) {
-            alert("Please type a valid number for donation.");
+        if (isNaN(addMoney) || addMoney <= 0) {
+            alert("Please type a valid positive number for donation.");
             return;
         }
 
@@ -63,8 +61,8 @@ document.getElementById('btn-quota')
         const addMoney = getInputFieldValueById('quota-input')
         const balance = getTextFiledValueById('donate-quota-balance')
 
-        if (isNaN(addMoney) || isNaN(balance)) {
-            alert("Please type a valid number for donation.");
+        if (isNaN(addMoney) || addMoney <= 0) {
+            alert("Please type a valid positive number for donation.");
             return;
         }
 
