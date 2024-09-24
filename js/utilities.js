@@ -1,15 +1,15 @@
 
 
-function getInputFieldValueById(id){
+function getInputFieldValueById(id) {
     const inputValue = document.getElementById(id).value;
     const inputNumber = parseFloat(inputValue);
 
-    return inputNumber;
+    return isNaN(inputNumber) ? 0 : inputNumber;
 }
 
-
-function getTextFiledValueById(id){
+function getTextFiledValueById(id) {
     const textValue = document.getElementById(id).innerText;
     const textNumber = parseFloat(textValue);
-    return textNumber;
+
+    return isNaN(textNumber) ? 0 : textNumber;
 }

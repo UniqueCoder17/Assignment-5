@@ -8,7 +8,8 @@ document.getElementById('donate-btn')
         const cashOut = getInputFieldValueById('donate-input')
         const balance = getTextFiledValueById('account-balance')
 
-        if (isNaN(addMoney) || addMoney <= 0) {        
+        if (cashOut <= 0) {
+            console.log("Please type a valid positive number for donation.");
             return;
         }
 
@@ -26,7 +27,8 @@ document.getElementById('feni-donate-btn')
         const cashOut = getInputFieldValueById('feni-input')
         const balance = getTextFiledValueById('account-balance')
 
-        if (isNaN(addMoney) || addMoney <= 0) {       
+        if (cashOut <= 0) {
+            console.log("Please type a valid positive number for donation.");
             return;
         }
 
@@ -44,7 +46,8 @@ document.getElementById('btn-quota')
         const cashOut = getInputFieldValueById('quota-input')
         const balance = getTextFiledValueById('account-balance')
 
-        if (isNaN(addMoney) || addMoney <= 0) {
+        if (cashOut <= 0) {
+            console.log("Please type a valid positive number for donation.");
             return;
         }
 
