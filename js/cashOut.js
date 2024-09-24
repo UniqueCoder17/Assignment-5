@@ -8,7 +8,7 @@ document.getElementById('donate-btn')
         const cashOut = getInputFieldValueById('donate-input')
         const balance = getTextFiledValueById('account-balance')
 
-        if (isNaN(addMoney) || addMoney <= 0) {          
+        if (isNaN(addMoney) || addMoney <= 0) {        
             return;
         }
 

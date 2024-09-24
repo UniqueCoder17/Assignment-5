@@ -35,7 +35,7 @@
         </div>
     </header>
     
-    <main class="mt-"> 
+    <main class="mt-16 lg:mt-20"> 
         <div id="transaction-section">
             <h2 class="text-4xl text-center">Donation History</h2>
             <div id="transaction-container" class="space-y-4">
@@ -51,7 +51,7 @@
     
             transactions.forEach(transaction => {
                 const div = document.createElement('div');
-                div.classList.add('border-2', 'p-4', 'rounded-lg', 'mt-4', 'lg:w-[1300px]', 'mx-2', 'lg:ml-24');
+                div.classList.add('border-2', 'p-4', 'rounded-lg','mt-16', 'lg:mt-20', 'lg:w-[1300px]', 'mx-2', 'lg:ml-24');
                 div.innerHTML = `
                     <h4 class="text-2xl font-bold">${transaction.amount} Taka Donated for ${transaction.cause}</h4>
                     <p>Date: ${transaction.date}</p>
@@ -61,9 +61,10 @@
         });
     </script>
     
-    <script src="js/featurse.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/cashOut.js"></script>
     <script src="js/donate.js"></script>
+    <script src="js/featurse.js"></script>
+
 </body>
 </html>
