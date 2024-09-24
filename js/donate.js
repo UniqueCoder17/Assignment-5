@@ -22,6 +22,7 @@ document.getElementById('donate-btn').addEventListener('click', function (event)
         date: new Date().toLocaleString(),
     });
     localStorage.setItem('transactions', JSON.stringify(transactions));
+    my_modal_1.showModal();
 
 });
 
@@ -48,6 +49,7 @@ document.getElementById('feni-donate-btn')
             date: new Date().toLocaleString(),
         });
         localStorage.setItem('transactions', JSON.stringify(transactions));
+        my_modal_2.showModal();
 
     })
 
@@ -76,7 +78,7 @@ document.getElementById('btn-quota')
             date: new Date().toLocaleString(),
         });
         localStorage.setItem('transactions', JSON.stringify(transactions));
-
+        my_modal_3.showModal();
 
     })
 
